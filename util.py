@@ -1,5 +1,8 @@
 from PIL import Image, ImageDraw, ImageFont, ImageColor
 
+def render_text(pygame_display, font, text, color, position):
+    text_img = font.render(text, True, color)
+    pygame_display.blit(text_img, position)
 
 def expand2square(pil_img, background_color):
     width, height = pil_img.size

@@ -2,12 +2,23 @@ import RPi.GPIO as GPIO
 import pygame
 import time
 import util
+from operator import add
 
 class Display:
 
     ASSETS_PATH = "./assets/"
+    LAUNCH_IMAGE = "Lum_For_Ants.jpg"
+    WARNING_IMAGE = "warning.png"
+
     WHITE = (255, 255, 255)
     BLACK = (0, 0, 0)
+
+    FONT = 'freesansbold.ttf'
+    FONT_SIZE = 48
+
+    # POSITIONS
+    BIKE_STATS_POSITION = (10, 10)
+    BLINDSPOT_POSITION = (820, 20)
 
     def __init__(self):
         pygame.init()
@@ -20,6 +31,7 @@ class Display:
             "bike_stats": True,
         }
 
+        self.font = pygame.font.Font(Display.FONT, Display.FONT_SIZE)
         
 
         self.done = False
@@ -27,23 +39,28 @@ class Display:
         self.height = pygame.display.Info().current_h
 
         # LAUNCH IMAGE
-        self.image0 = pygame.image.load(Display.ASSETS_PATH + "Lum_For_Ants.jpg")
-        self.image0 = pygame.transform.scale(image0, (self.width, self.height))
+        self.launch_image = pygame.image.load(Display.ASSETS_PATH + Display.LAUNCH_IMAGE)
+        self.launch_image = pygame.transform.scale(self.launch_image, (self.width, self.height))
+
+        # BLINDSPOT IMAGE
+        self.warning_image = pygame.image.load(Display.ASSETS_PATH + Display.WARNING_IMAGE)
+        self.warning_image = pygame.transform.scale(self.warning_image, (120, 120))
 
 
 
     def main(self):
         self.init_display();
 
-        time.sleep(5)
+        time.sleep(1)
 
         self.main_loop();
 
-        sys.exit();
+        pygame.quit()
+        quit()
 
     def init_display(self):
         self.screen = pygame.display.set_mode((0, 0),pygame.FULLSCREEN)
-        self.screen.blit(image0,(0,0))
+        self.screen.blit(self.launch_image,(0,0))
         pygame.display.update()
 
     def main_loop(self):
@@ -62,51 +79,43 @@ class Display:
             self.update_display();
 
     def check_updates_from_app(self):
-        print("check from app...")
-        time.sleep(1)
+        pass
 
     def check_updates_from_camera(self):
-        print("check from camera...")
-        time.sleep(1)
+        pass
 
     def check_updates_from_antreceiver(self):
-        print("check from ant+...")
-        time.sleep(1)
+        pass
 
     def update_display(self):
-        print("updating display...")
-        
-
-        # TEST FONTS
-        font0 = pygame.font.Font('freesansbold.ttf', 32)
-        text0 = font.render('Test', True, Display.BLACK)
-        font1 = pygame.font.Font('freesansbold.ttf', 64)
-        text1 = font.render('Test', True, Display.BLACK)
-        font2 = pygame.font.Font('freesansbold.ttf', 96)
-        text2 = font.render('Test', True, Display.BLACK)
-
-        self.display.fill(Display.WHITE)
-        self.display.blit(text0, (10, 100));
-        self.display.blit(text1, (10, 200));
-        self.display.blit(text2, (10, 300));
+        self.screen.fill(Display.WHITE)
 
         # UPDATE BLINDSPOT
         if (self.hud_toggles["blindspot"]):
-            pass
-        else:
-            pass
+            self.screen.blit(self.warning_image, Display.BLINDSPOT_POSITION)
         
         # UPDATE WEATHER
         if (self.hud_toggles["weather"]):
             pass
-        else:
-            pass
+
         
         # UPDATE BIKE STATS
         if (self.hud_toggles["bike_stats"]):
-            pass
-        else:
-            pass
+            stats_pos = Display.BIKE_STATS_POSITION
+
+            speed_text = "Speed: " + str(200) + "km/h"
+            distance_text = "Distance: " + str(1000) + "km"
+            cadence_text = "Cadence: " + str(99999)
+            wattage_text = "Wattage: " + str(120) + "W" 
+
+            util.render_text(self.screen, self.font, speed_text, Display.BLACK,
+                            (stats_pos[0], stats_pos[1] + 0))
+            util.render_text(self.screen, self.font, distance_text, Display.BLACK,
+                            (stats_pos[0], stats_pos[1] + 40))
+            util.render_text(self.screen, self.font, cadence_text, Display.BLACK,
+                            (stats_pos[0], stats_pos[1] + 80))
+            util.render_text(self.screen, self.font, wattage_text, Display.BLACK,
+                            (stats_pos[0], stats_pos[1] + 120))
         
         # UPDATE BIOMETRICS
         if (self.hud_toggles["biometrics"]):
