@@ -3,6 +3,8 @@ import pygame
 import time
 import util
 from operator import add
+from bluetooth_server import srv
+import threading
 
 class Display:
 
@@ -19,6 +21,7 @@ class Display:
     # POSITIONS
     BIKE_STATS_POSITION = (10, 10)
     BLINDSPOT_POSITION = (820, 20)
+    WEATHER_POSITION = (10, 400)
 
     def __init__(self):
         pygame.init()
@@ -30,6 +33,15 @@ class Display:
             "weather": True,
             "bike_stats": True,
         }
+
+        self.weather = {
+            "temperature": 21,
+            "wind_speed": 5,
+            "condition": "sunny"
+        }
+
+        # Start bluetooth server on a different thread
+        self.thread_list = []
 
         self.font = pygame.font.Font(Display.FONT, Display.FONT_SIZE)
         
@@ -52,11 +64,36 @@ class Display:
         self.init_display();
 
         time.sleep(1)
-
+        
+        self.create_server()
         self.main_loop();
 
         pygame.quit()
         quit()
+
+    def create_server(self):
+        new_thread = threading.Thread(target=self.runner,
+                                              args=())
+
+        # Record the new thread.
+        self.thread_list.append(new_thread)
+
+        # Start the new thread running.
+        print("Starting serving thread: ", new_thread.name)
+        new_thread.daemon = True
+        new_thread.start()
+    
+    def runner(self):
+        server = srv.Server()
+        while True:
+            try:
+                recvd_data = server.get_info();
+            
+                self.hud_toggles = recvd_data["hud_toggles"];
+                self.weather_data = recvd_data["weather"];
+            except Exception as msg:
+                print(msg)
+
 
     def init_display(self):
         self.screen = pygame.display.set_mode((0, 0),pygame.FULLSCREEN)
@@ -73,13 +110,10 @@ class Display:
                     if event.key == pygame.K_ESCAPE:
                         self.done = True
             
-            self.check_updates_from_app(); # Interface with Felix
             self.check_updates_from_camera(); # Interface with Sabrina
             self.check_updates_from_antreceiver(); # Interface with Alex
             self.update_display();
 
-    def check_updates_from_app(self):
-        pass
 
     def check_updates_from_camera(self):
         pass
@@ -96,7 +130,26 @@ class Display:
         
         # UPDATE WEATHER
         if (self.hud_toggles["weather"]):
-            pass
+            weather_pos = Display.WEATHER_POSITION
+
+            temp = self.weather["temperature"]
+            wind_speed = self.weather["wind_speed"]
+            condition = self.weather["condition"]
+
+            weather_text = str(temp) + "C"
+            if (condition == "sunny"):
+                util.load_svg(Display.ASSETS_PATH + "wi-day-sunny.svg", self.screen, weather_pos, (120, 120))
+            elif(condition == "cloudy"):
+                pass
+            elif (condition == "rainy"):
+                pass
+            elif (condition == "snowy"):
+                pass
+            elif (condition == "windy"):
+                pass
+            
+            util.render_text(self.screen, self.font, weather_text, Display.BLACK,
+                            (weather_pos[0] + 140, weather_pos[1]))
 
         
         # UPDATE BIKE STATS

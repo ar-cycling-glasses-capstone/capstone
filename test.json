@@ -1,0 +1,15 @@
+{
+    "hud_toggles":
+    {
+        "blindspot": true,
+        "biometrics": true,
+        "weather": true,
+        "bike_stats": true,
+    },
+    "weather":
+    {
+        "temperature": 21,
+        "wind_speed": 5,
+        "condition": "sunny"
+    }
+}

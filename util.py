@@ -1,4 +1,14 @@
 from PIL import Image, ImageDraw, ImageFont, ImageColor
+import pygame
+import cairosvg
+import io
+
+def load_svg(filename, surface, position, size):
+    new_bites = cairosvg.svg2png(url = filename)
+    byte_io = io.BytesIO(new_bites)
+    image = pygame.image.load(byte_io)
+    image = pygame.transform.scale(image, size)
+    surface.blit(image, position)
 
 def render_text(pygame_display, font, text, color, position):
     text_img = font.render(text, True, color)

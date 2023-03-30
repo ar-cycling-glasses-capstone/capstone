@@ -1,3 +1,6 @@
 [submodule "bluetooth-server"]
 	path = bluetooth-server
 	url = https://github.com/ar-cycling-glasses-capstone/bluetooth-server.git
+[submodule "bluetooth_server"]
+	path = bluetooth_server
+	url = https://github.com/ar-cycling-glasses-capstone/bluetooth-server.git
