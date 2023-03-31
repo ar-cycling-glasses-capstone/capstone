@@ -1,0 +1,25 @@
+{
+    "devices": [
+        {
+            "device": "PowerMeter",
+            "id": 63759,
+            "serial": 4294967295,
+            "transmission_type": 5,
+            "type": 11
+        },
+        {
+            "device": "HeartRate",
+            "id": 8962,
+            "serial": 4294967295,
+            "transmission_type": 1,
+            "type": 120
+        },
+        {
+            "device": "BikeSpeedCadence",
+            "id": 24646,
+            "serial": 4294967295,
+            "transmission_type": 1,
+            "type": 121
+        }
+    ]
+}
