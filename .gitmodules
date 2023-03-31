@@ -4,3 +4,6 @@
 [submodule "bluetooth_server"]
 	path = bluetooth_server
 	url = https://github.com/ar-cycling-glasses-capstone/bluetooth-server.git
+[submodule "openCV"]
+	path = openCV
+	url = https://github.com/ar-cycling-glasses-capstone/openCV.git
