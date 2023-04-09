@@ -1,6 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont, ImageColor
 import pygame
-import cairosvg
 import io
 
 pygame.init()
