@@ -8,14 +8,6 @@ WIDTH = pygame.display.Info().current_w
 HEIGHT = pygame.display.Info().current_h
 
 
-def load_svg(filename, surface, position, size):
-    new_bites = cairosvg.svg2png(url=filename)
-    byte_io = io.BytesIO(new_bites)
-    image = pygame.image.load(byte_io)
-    image = pygame.transform.scale(image, size)
-    surface.blit(image, position)
-
-
 def render_adjacent_img(pygame_display, img, spacing, adjacent_img_rect, alignment):
     img_rect = img.get_rect()
 
