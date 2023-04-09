@@ -1,0 +1,223 @@
+2023-04-07 20:45:29.427971: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:01.292841: アカリがやってきたぞっ
+
+2023-04-07 20:46:29.512076: アカリがやってきたぞっhttps://www.guiltygear.com/ggst/en/news/post-1859/
+
+2023-04-07 20:46:37.938712: アカリがやってきたぞっ
+
+
+
+2023-04-07 20:46:39.628542: アカリがやってきたぞっ
+
+
+
+2023-04-07 20:46:40.847308: アカリがやってきたぞっ
+
+
+
+2023-04-07 20:46:41.019220: アカリがやってきたぞっ
+
+
+
+2023-04-07 20:46:41.186350: アカリがやってきたぞっ
+
+
+
+2023-04-07 20:46:41.371825: アカリがやってきたぞっ
+
+
+
+2023-04-07 20:46:50.792971: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:50.868568: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:51.044329: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:51.355262: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:51.461021: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:57.237769: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:57.258944: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:57.283823: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:57.677742: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:57.835716: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:57.965921: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:58.089759: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:58.221070: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:58.371908: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:58.496882: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:58.625674: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:58.751088: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:58.873860: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:46:59.000284: {"Felix": 3, "Hi": 5}
+
+2023-04-07 20:47:08.123217: {
+    "hud_toggles":
+    {
+        "blindspot": false,
+        "biometrics": false,
+        "weather": false,
+        "bike_stats": false,
+    },
+    "weather":
+    {
+        "temperature": 21,
+        "wind_speed": 5,
+        "condition": "sunny"
+    }
+}
+
+2023-04-07 20:47:19.532706: {
+    "hud_toggles":
+    {
+        "blindspot": false,
+        "biometrics": false,
+        "weather": false,
+        "bike_stats": false,
+    },
+    "weather":
+    {
+        "temperature": 21,
+        "wind_speed": 5,
+        "condition": "sunny"
+    }
+}
+
+2023-04-07 20:47:19.572141: {
+    "hud_toggles":
+    {
+        "blindspot": false,
+        "biometrics": false,
+        "weather": false,
+        "bike_stats": false,
+    },
+    "weather":
+    {
+        "temperature": 21,
+        "wind_speed": 5,
+        "condition": "sunny"
+    }
+}
+{
+    "hud_toggles":
+    {
+        "blindspot": false,
+        "biometrics": false,
+        "weather": false,
+        "bike_stats": false,
+    },
+    "weather":
+    {
+        "temperature": 21,
+        "wind_speed": 5,
+        "condition": "sunny"
+    }
+}
+
+2023-04-07 20:47:42.783025: {
+    "hud_toggles":
+    {
+        "blindspot": false,
+        "biometrics": false,
+        "weather": false,
+        "bike_stats": false,
+    },
+    "weather":
+    {
+        "temperature": 21,
+        "wind_speed": 5,
+        "condition": "sunny"
+    }
+}
+
+2023-04-07 20:47:51.205283: {
+    "hud_toggles":
+    {
+        "blindspot": false,
+        "biometrics": false,
+        "weather": false,
+        "bike_stats": false,
+    },
+    "weather":
+    {
+        "temperature": 21,
+        "wind_speed": 5,
+        "condition": "sunny"
+    }
+}
+
+2023-04-07 20:48:54.563378: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false,},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:49:14.840996: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false,},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:50:14.241701: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:50:40.482301: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:50:42.105755: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:50:42.254156: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:50:42.395562: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:53:25.657944: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:55:14.709473: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:55:14.994510: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:55:15.197670: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:55:15.521408: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:55:15.672795: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 20:55:16.004256: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 21:00:11.731126: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 21:01:56.859297: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": false,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 21:02:07.554114: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 5,"condition": "sunny"}}
+
+2023-04-07 21:02:25.358165: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 69,"condition": "fuck you carlos"}}
+
+2023-04-07 21:02:33.279140: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 69,"condition": "windy"}}
+
+2023-04-07 21:02:40.213470: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": false},"weather":{"temperature": 21,"wind_speed": 69,"condition": "Windy"}}
+
+2023-04-07 21:02:52.095974: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": false},"weather":{"temperature": 100,"wind_speed": 69,"condition": "Windy"}}
+
+2023-04-07 21:02:53.346929: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": false},"weather":{"temperature": 100,"wind_speed": 69,"condition": "Windy"}}
+
+2023-04-07 21:03:06.937730: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": true},"weather":{"temperature": 100,"wind_speed": 69,"condition": "Windy"}}
+
+2023-04-07 21:03:14.868056: {"hud_toggles":{"blindspot": true,"biometrics": false,"weather": true,"bike_stats": true},"weather":{"temperature": 100,"wind_speed": 69,"condition": "Windy"}}
+
+2023-04-07 21:03:19.043431: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": true},"weather":{"temperature": 100,"wind_speed": 69,"condition": "Windy"}}
+
+2023-04-07 21:03:30.213176: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": true},"weather":{"temperature": 100,"wind_speed": 69,"condition": "windy"}}
+
+2023-04-07 21:10:41.771215: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": true},"weather":{"temperature": 100,"wind_speed": 69,"condition": "sunny"}}
+
+2023-04-07 21:10:57.553797: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": true},"weather":{"temperature": 10000,"wind_speed": 69,"condition": "sunny"}}
+
+2023-04-07 21:11:06.478663: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": true},"weather":{"temperature": 10000,"wind_speed": 69,"condition": "windy"}}
+
+2023-04-07 21:11:22.309674: {"hud_toggles":{"blindspot": false,"biometrics": false,"weather": true,"bike_stats": true},"weather":{"temperature": 10000,"wind_speed": 69,"condition": "rainy"}}
+
